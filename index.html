@@ -13,8 +13,7 @@
 
 </style>
 <body>
-
-
+<div id="particles-js">
 <header>
 	<div class="wrapper">
 		<nav class="header-nav">
@@ -26,80 +25,66 @@
 		</nav>
 	</div>
 </header>
-<div class="wrapper">
-
-	<section class="box-style">
-		<a href="download/code1.txt" target="_blank" class="btn-code">Download</a>
-		<div class="box-style-card">
-			<div class="card-contentxyz">
-				<h2><span>Dummy</span>CSS-Only Full-Width Responsive Images 2 Ways</h2>
-				<p>We are using these temporary contents on the website. These dummy texts are for display purposes only to show the volume of content that will be...</p>
+<main>
+	<div class="wrapper">
+		<section class="box-style">
+			<a href="download/code1.txt" target="_blank" class="btn-code">Download</a>
+			<div class="box-style-card">
+				<div class="card-contentxyz">
+					<h2><span>Dummy</span>CSS-Only Full-Width Responsive Images 2 Ways</h2>
+					<p>We are using these temporary contents on the website. These dummy texts are for display purposes only to show the volume of content that will be...</p>
+				</div>
 			</div>
-		</div>
-		<div class="box-style-card">
-			<div class="card-contentxyz">
-				<h2><span>Dummy</span>CSS-Only Full-Width Responsive Images 2 Ways</h2>
-				<p>We are using these temporary contents on the website. These dummy texts are for display purposes only to show the volume of content that will be...</p>
+			<div class="box-style-card">
+				<div class="card-contentxyz">
+					<h2><span>Dummy</span>CSS-Only Full-Width Responsive Images 2 Ways</h2>
+					<p>We are using these temporary contents on the website. These dummy texts are for display purposes only to show the volume of content that will be...</p>
+				</div>
 			</div>
-		</div>
-		<div class="box-style-card">
-			<div class="card-contentxyz">
-				<h2><span>Dummy</span>CSS-Only Full-Width Responsive Images 2 Ways</h2>
-				<p>We are using these temporary contents on the website. These dummy texts are for display purposes only to show the volume of content that will be...</p>
+			<div class="box-style-card">
+				<div class="card-contentxyz">
+					<h2><span>Dummy</span>CSS-Only Full-Width Responsive Images 2 Ways</h2>
+					<p>We are using these temporary contents on the website. These dummy texts are for display purposes only to show the volume of content that will be...</p>
+				</div>
 			</div>
-		</div>
-		<div class="box-style-card">
-			<div class="card-contentxyz">
-				<h2><span>Dummy</span>CSS-Only Full-Width Responsive Images 2 Ways</h2>
-				<p>We are using these temporary contents on the website. These dummy texts are for display purposes only to show the volume of content that will be...</p>
+			<div class="box-style-card">
+				<div class="card-contentxyz">
+					<h2><span>Dummy</span>CSS-Only Full-Width Responsive Images 2 Ways</h2>
+					<p>We are using these temporary contents on the website. These dummy texts are for display purposes only to show the volume of content that will be...</p>
+				</div>
 			</div>
-		</div>
-	</section>
-
-
-	<!-- <div class="test">
-		<section class="sect1">
-			<div class="box"><span>Box</span></div>
-			<div class="box"><span>Box</span></div>
 		</section>
-		<section class="sect2">
-			<div class="box"><span>Box</span></div>
-			<div class="box"><span>Box</span></div>
-			<div class="box"><span>Box</span></div>
-		</section>
-		<section class="sect3">
-			<div class="box"><span>Box</span></div>
-			<div class="box"><span>Box</span></div>
-			<div class="box"><span>Box</span></div>
-		</section>
-		<section class="sect4">
-			<div class="box"><span>Box</span></div>
-			<div class="box"><span>Box</span></div>
-		</section>
-		<section class="sect5">
-			<div class="box"><span>Box</span></div>
-			<div class="box"><span>Box</span></div>
-		</section>
-	</div> -->
-
+ 
+	</div>
+</main>
 
 </div>
 
-
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
  -->
-<script type="text/javascript">
-	$(document).ready(function(){
 
-		$('.faq_xyz h2').click(function(){
-	   $(this).next().slideToggle()
-	  .siblings('.faq_xyz .faq_content').slideUp();
-	  //toggle sign
-	   $(this).toggleClass('sign')
-	   .siblings('.faq_xyz h2').removeClass();
-	 });
+<script src="plugins/particles.js-master/js/particles.js"></script>.
+<script src="plugins/particles.js-master/js/app.js"></script>
 
-	});
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
 </script>
+
 </body>
 </html>
