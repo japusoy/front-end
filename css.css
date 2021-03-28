@@ -12,7 +12,7 @@ a { transition: all .18s ease-in-out; }
 .wrapper { max-width: 1200px; width: 100%; margin: 0 auto; }
 
 
-#particles-js canvas { position: absolute; top: 0; z-index: -1; }
+#particles-js canvas { position: absolute; top: 0; z-index: -1; left: 0; right: 0; }
 
 nav.header-nav { text-align: center; padding-bottom: 100px; }
 nav.header-nav ul { display: flex; justify-content: center; }
